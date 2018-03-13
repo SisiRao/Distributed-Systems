@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://sisir.andrew.cmu.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sisir.andrew.cmu.edu/">
+
+<xs:element name="NoSuchAlgorithmException" type="tns:NoSuchAlgorithmException"/>
+
+<xs:element name="UnsupportedEncodingException" type="tns:UnsupportedEncodingException"/>
+
+<xs:element name="addBlock" type="tns:addBlock"/>
+
+<xs:element name="addBlockResponse" type="tns:addBlockResponse"/>
+
+<xs:element name="blockChainToString" type="tns:blockChainToString"/>
+
+<xs:element name="blockChainToStringResponse" type="tns:blockChainToStringResponse"/>
+
+<xs:element name="compareBytes" type="tns:compareBytes"/>
+
+<xs:element name="compareBytesResponse" type="tns:compareBytesResponse"/>
+
+<xs:element name="getHashValue" type="tns:getHashValue"/>
+
+<xs:element name="getHashValueResponse" type="tns:getHashValueResponse"/>
+
+<xs:element name="getMenu" type="tns:getMenu"/>
+
+<xs:element name="getMenuResponse" type="tns:getMenuResponse"/>
+
+<xs:element name="isChainVaild" type="tns:isChainVaild"/>
+
+<xs:element name="isChainVaildResponse" type="tns:isChainVaildResponse"/>
+
+<xs:complexType name="compareBytes">
+<xs:sequence>
+<xs:element name="arg0" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+<xs:element name="arg1" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="compareBytesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isChainVaild">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="isChainVaildResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="blockChainToString">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="blockChainToStringResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHashValue">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHashValueResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnsupportedEncodingException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NoSuchAlgorithmException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMenu">
+<xs:sequence>
+<xs:element name="request" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMenuResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBlock">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBlockResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
