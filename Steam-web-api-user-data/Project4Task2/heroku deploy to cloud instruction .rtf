@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Deploy to cloud with Heroku\
+\
+1. In terminal:\
+	heroku create\
+    It will give a name like 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+perfidious-wagon-4325. This is the app name. Your full app URL will be something like perfidious-wagon-4325.herokuapp.com.\
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+2. Cd to ur netbeans project directory.  \
+    Cd to the dist subdirectory. \
+    Confirm that u have a .war file, if not go to netbeans and \'93build\'94 the project.\
+\
+3. 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+Deploy your war to your Heroku application by running:\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2    heroku war:deploy <path_to_war_file> --app <app_name>\
+\
+e.g.heroku war:deploy InterestingPicture.war --app perfidious-wagon-4325\
+\
+4. Visit your application by going to yourappname.herokuapp.com.  E.g.\
+  https://perfidious-wagon-4325.herokuapp.com/\
+}
